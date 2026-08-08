@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+body {
+    background-color: #e9d9c0;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 4.4% 0 4.4%;
+}
+.header__nav ul {
+    display: flex;
+    gap: 48px;
+}
+.logo {
+    width: 434px;
+}
+.header__nav a {
+    color: #fff;
+    font-family: "Alatsi", sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+.concept {
+    margin-top: 132px;
+
+}
+
+section {
+    margin-top: 144px;
+}
+.concept-subtitle {
+    font-family: "Alatsi", sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    padding-bottom: 40px;  
+}
+.concept-title {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 64px;
+    line-height: 1.5;
+    padding-bottom: 16px;
+}
+.concept p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.about-image {
+    width: 44%;
+    flex-shrink: 0;
+}
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 64px 0 ;
+}
+.about-text {
+    padding-left: 40px;
+    text-align: left;
+    align-items: start;
+}
+h2#about-us {
+    color: #D20202;
+    font-family: "Diplomata SC", serif;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+.about-inner {
+    font-size: 32px;
+    line-height: 1.5;
+    padding-bottom: 16px;
+
+}
+.about p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+h2 {
+    color: #D20202;
+    font-family: "Diplomata SC", serif;
+    font-size: 40px;
+    padding-bottom: 32px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.menu li {
+    width: 31%;    
+}
+
+.menu-image {
+    position: relative;
+}
+.menu-image img {
+    width: 100%;
+    display: block;
+    border-radius: o 64px 0 0;
+}
+.menu-image h3 {
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    margin: 0;
+
+    color: #D20202;
+    font-family: "Diplomata SC", serif;
+    font-size: 26px;
+    line-height: 1;
+}
+.content-menu {
+    padding-top: 20px;
+    text-align: left;
+}
+.content-menu p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.image-container {
+    display: flex;
+    width: 1440px;
+    max-width: 1440px;
+    margin-left: calc(50% - 720px); 
+}
+.image-container img {
+    width: 20%;
+    height: auto;
+    display: block;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    height: 156px;
+    background-color: #fff;
+    border: 1px solid #4f260b;
+}
+.item {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 16px;
+}
+.item:last-child {
+    margin-bottom: 0;
+}
+.item p {
+    margin: 0;
+}
+.event-list {
+    margin: 0 auto;
+}
+.date {
+    font-weight: 500;
+}
+
+iframe {
+    width: 1440px;
+    max-width: 1440px;
+    height: 353px;
+    margin-left: calc(50% - 720px);
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
