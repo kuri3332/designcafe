@@ -16,7 +16,7 @@ header {
     display: flex;
     gap: 48px;
 }
-.logo {
+h1 {
     width: 434px;
 }
 .header__nav a {
@@ -25,10 +25,7 @@ header {
 }
 
 main {
-    max-width: 1000px;
-    margin: 0 auto;
     text-align: center;
-    padding: 10px;
 }
 .concept {
     margin-top: 132px;
@@ -37,6 +34,11 @@ main {
 
 section {
     margin-top: 144px;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 144px auto 0;
+    padding: 0 10px;
 }
 .concept-subtitle {
     font-family: "Alatsi", sans-serif;
@@ -112,7 +114,7 @@ h2 {
 .menu-image img {
     width: 100%;
     display: block;
-    border-radius: o 64px 0 0;
+    border-radius: 0 64px 0 0;
 }
 .menu-image h3 {
     position: absolute;
@@ -137,9 +139,6 @@ h2 {
 
 .image-container {
     display: flex;
-    width: 1440px;
-    max-width: 1440px;
-    margin-left: calc(50% - 720px); 
 }
 .image-container img {
     width: 20%;
@@ -173,10 +172,48 @@ h2 {
 }
 
 iframe {
-    width: 1440px;
-    max-width: 1440px;
+    width: 100%;
     height: 353px;
-    margin-left: calc(50% - 720px);
     filter: grayscale(100%) invert(92%) contrast(83%);
 }
 
+.footer {
+    display: flex;
+    /* justify-content: center; */
+    margin: 80px auto;
+}
+.footer-image {
+    width: 380px;
+}
+.footer-image img {
+    width: 100%;
+}
+.footer-text {
+    padding-left: 39px;
+}
+.footer-list {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.item {
+    display: flex;
+}
+.item-list {
+    width: 64px;
+    margin: 0;
+    text-align: left;
+}
+.item-text {
+    margin: 0;
+    text-align: left;
+}
+.copy {
+    text-align: left;
+    margin: 0 auto 60px;
+}
+.toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 140px;
+}
