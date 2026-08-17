@@ -166,6 +166,7 @@ h2 {
 }
 .event-list {
     margin: 0 auto;
+    font-size: 20px;
 }
 .date {
     font-weight: 500;
@@ -176,11 +177,14 @@ iframe {
     height: 353px;
     filter: grayscale(100%) invert(92%) contrast(83%);
 }
-
+footer {
+    background-color: #fff;
+}
 .footer {
     display: flex;
     /* justify-content: center; */
-    margin: 80px auto;
+    padding-top: 80px;
+    margin: 0 auto;
 }
 .footer-image {
     width: 380px;
@@ -209,7 +213,8 @@ iframe {
 }
 .copy {
     text-align: left;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 }
 .toTop {
     position: fixed;
