@@ -57,7 +57,9 @@ section {
     font-size: 24px;
     line-height: 1.5;
 }
-
+.br-pc {
+  display: none; /* スマホではPC用改行を消す */
+}
 .about {
     display: flex;
     justify-content: space-between;
@@ -221,4 +223,210 @@ footer {
     bottom: 20px;
     right: 20px;
     width: 140px;
+}
+
+
+/* PCの時のnavを消す　　*/
+.hamburger,
+.header__nav-sp {
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .header__nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        width: 54px;
+        height: 54px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 99999;
+    }
+    .hamburger span {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        top: 27px;
+        left: 7px;
+        transition: 0.3s;
+    }
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        top: 13px;
+        left: 7px;
+        transition: 0.3s;
+    }
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        bottom: 12px;
+        left: 7px;
+        transition: 0.3s;
+    }
+    .header__nav-sp {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #0b0b0bde;
+        top: 0;
+        left: 0;
+    }
+
+    .header__nav-sp ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        }
+
+    .header__nav-sp a {
+        color: #fff;
+        font-family: "Alatsi", sans-serif;
+        font-size: 36px;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+    .open::before {
+        transform: rotate(45deg);
+        top: 25px;
+    }
+    .open::after {
+        transform: rotate(-45deg);
+        bottom: 25px;
+    }
+
+    .concept-title {
+        font-weight: 500;
+        font-size: 31px;
+        padding-bottom: 24px;
+        
+    }
+    .about-inner {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+    width: 244px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .main-visual img {
+        margin-bottom: 46px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        margin: 80px 20px;
+        padding: 0;
+    }
+    .concept p {
+        font-size: 16px;
+        line-height: 2.0;
+    } 
+    .br-pc {
+    display: inline; /* PCではPC用改行を表示する */
+    }
+    .about-image {
+        width: 100%;
+    }
+    .about-image img {
+        border-radius: 0;
+    }
+    h2#about-us {
+        font-size: 2em;
+    }
+    #about-us {
+        padding: 40px 0;
+    }
+    .about-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    .about-inner {
+        text-align: left;
+    }
+    .about p {
+        line-height: 2.0;
+        text-align: left;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .menu li {
+        width: 100%;
+    } 
+    section {
+        margin-top: 80px;
+    }
+    .image-container {
+        overflow-x: auto;
+    }
+
+    .image-container img {
+        width: 390px;
+        flex-shrink: 0;
+    }
+    .inner {
+        height: auto;
+        padding: 32px 0;
+    }
+    .event-list {
+        margin: 0 20px;
+        font-size: 16px;
+        min-width: 0;
+    }
+    .event li.item {
+        flex-direction: column;
+        text-align: left;
+        gap: 6px;
+        margin-bottom: 32px;
+    }
+    p.title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .footer-image {
+        width: 326px;
+    }
+    footer .footer-text {
+        padding: 39px 0 0 0;
+    }
+    .footer li.item {
+        margin-bottom: 24px;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer.wrapper {
+        margin: 0;
+        padding: 80px 20px;
+    }
+    p.copy.wrapper {
+        margin: 0;
+        padding: 0 20px 80px 20px;
+    }
 }
