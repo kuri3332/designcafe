@@ -425,6 +425,9 @@ footer {
         margin: 0;
         padding: 80px 20px;
     }
+    .footer .item-text {
+        line-height: 1.5;
+    } 
     p.copy.wrapper {
         margin: 0;
         padding: 0 20px 80px 20px;
