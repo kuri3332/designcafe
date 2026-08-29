@@ -11,6 +11,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 4.4% 0 4.4%;
+    z-index: 99999;
 }
 .header__nav ul {
     display: flex;
@@ -139,11 +140,18 @@ h2 {
     line-height: 1.8;
 }
 
-.image-container {
+/*.image-container {
     display: flex;
+    width: 100%;
+    overflow: hidden;
 }
-.image-container img {
+.image-container picture {
     width: 20%;
+    flex: 0 0 20%;
+
+}*/
+.image-container picture img {
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -225,6 +233,10 @@ footer {
     width: 140px;
 }
 
+
+.slick-dots li button:before {
+    font-size: 10px;
+}
 
 /* PCの時のnavを消す　　*/
 .hamburger,
@@ -382,14 +394,17 @@ footer {
     section {
         margin-top: 80px;
     }
+    /*
     .image-container {
         overflow-x: auto;
     }
-
-    .image-container img {
-        width: 390px;
-        flex-shrink: 0;
+    .image-container picture {
+        flex: 0 0 390px
     }
+    .image-container picture img {
+        width: 100%;
+    }
+        */
     .inner {
         height: auto;
         padding: 32px 0;
