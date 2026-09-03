@@ -136,17 +136,46 @@
             <h2 id="gallery">GALLERY</h2>
             <div class="image-container">
                 <picture>
-                <img src="./images/pc_gallary_01-100.jpg" alt="画像１"></picture>
+                <img src="./images/pc_gallary_01-100.jpg" class="clickable-img" alt="画像１">
+                <div class="img-modal">
+                <img class="modal-photo" src="" alt="">
+                </div>
+                </picture>
+
                 <picture>
-                <img src="./images/pc_gallary_02-100.jpg" alt="画像2"></picture>
+                <img src="./images/pc_gallary_02-100.jpg" class="clickable-img" alt="画像2">
+                <div class="img-modal">
+                <img class="modal-photo" src="" alt="">
+                </div>
+                </picture>
+
                 <picture>
-                <img src="./images/pc_gallary_03-100.jpg" alt="画像3"></picture>
+                <img src="./images/pc_gallary_03-100.jpg" class="clickable-img" alt="画像3">
+                <div class="img-modal">
+                <img class="modal-photo" src="" alt="">
+                </div>
+                </picture>
+
                 <picture>
-                <img src="./images/pc_gallary_04-100.jpg" alt="画像4"></picture>
+                <img src="./images/pc_gallary_04-100.jpg" class="clickable-img" alt="画像4">
+                <div class="img-modal">
+                <img class="modal-photo" src="" alt="">
+                </div>
+                </picture>
+
                 <picture>
-                <img src="./images/pc_gallary_05-100.jpg" alt="画像5"></picture>
+                <img src="./images/pc_gallary_05-100.jpg" class="clickable-img" alt="画像5">
+                <div class="img-modal">
+                <img class="modal-photo" src="" alt="">
+                </div>
+                </picture>
+
                 <picture>
-                <img src="./images/pc_gallary_01-100.jpg" alt="画像１"></picture>
+                <img src="./images/pc_gallary_01-100.jpg" class="clickable-img" alt="画像１">
+                <div class="img-modal">
+                <img class="modal-photo" src="" alt="">
+                </div>
+                </picture>
             </div>
         </section>
 
@@ -239,12 +268,30 @@
                         }
                     }
                 ]
-
-                
-                
-                
             });
         });
+
+        (function() {
+    var thumbs = document.querySelectorAll('.clickable-img');
+    var modal = document.querySelector('.img-modal');
+    var photo = document.querySelector('.modal-photo');
+
+    if (!modal || !photo) return;
+
+    document.body.appendChild(modal);
+
+    thumbs.forEach(function(thumb) {
+        thumb.addEventListener('click', function() {
+            photo.src = thumb.src;
+            modal.className = 'img-modal open';
+        });
+    });
+
+    modal.addEventListener('click', function() {
+    modal.className = 'img-modal';
+    photo.src = '';
+    });
+})();
     </script>
 </body>
 </html>

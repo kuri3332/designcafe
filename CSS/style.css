@@ -150,6 +150,35 @@ h2 {
     flex: 0 0 20%;
 
 }*/
+.clickable-img {
+    cursor: zoom-in;
+}
+
+.img-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    cursor: zoom-out;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-modal.open {
+    display: flex;
+}
+
+.modal-photo {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+
 .image-container picture img {
     width: 100%;
     height: auto;
