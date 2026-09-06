@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
 </head>
 
 <body>
@@ -135,49 +137,63 @@
         <section class="gallery">
             <h2 id="gallery">GALLERY</h2>
             <div class="image-container">
-                <picture>
-                <img src="./images/pc_gallary_01-100.jpg" class="clickable-img" alt="画像１">
-                <div class="img-modal">
-                <img class="modal-photo" src="" alt="">
-                </div>
-                </picture>
-
-                <picture>
-                <img src="./images/pc_gallary_02-100.jpg" class="clickable-img" alt="画像2">
-                <div class="img-modal">
-                <img class="modal-photo" src="" alt="">
-                </div>
-                </picture>
-
-                <picture>
-                <img src="./images/pc_gallary_03-100.jpg" class="clickable-img" alt="画像3">
-                <div class="img-modal">
-                <img class="modal-photo" src="" alt="">
-                </div>
-                </picture>
-
-                <picture>
-                <img src="./images/pc_gallary_04-100.jpg" class="clickable-img" alt="画像4">
-                <div class="img-modal">
-                <img class="modal-photo" src="" alt="">
-                </div>
-                </picture>
-
-                <picture>
-                <img src="./images/pc_gallary_05-100.jpg" class="clickable-img" alt="画像5">
-                <div class="img-modal">
-                <img class="modal-photo" src="" alt="">
-                </div>
-                </picture>
-
-                <picture>
-                <img src="./images/pc_gallary_01-100.jpg" class="clickable-img" alt="画像１">
-                <div class="img-modal">
-                <img class="modal-photo" src="" alt="">
-                </div>
-                </picture>
+                <a href="#modal01">
+                    <picture>
+                        <img src="./images/pc_gallary_01-100.jpg" alt="画像１">
+                    </picture>
+                </a>
+                <a href="#modal02">
+                    <picture>
+                        <img src="./images/pc_gallary_02-100.jpg" alt="画像2">
+                    </picture>
+                </a>
+                <a href="#modal03">
+                    <picture>
+                        <img src="./images/pc_gallary_03-100.jpg" alt="画像3">
+                    </picture>
+                </a>
+                <a href="#modal04">
+                    <picture>
+                        <img src="./images/pc_gallary_04-100.jpg" alt="画像4">
+                    </picture>
+                </a>
+                <a href="#modal05">
+                    <picture>
+                        <img src="./images/pc_gallary_05-100.jpg" alt="画像5">
+                    </picture>
+                </a>
+                <a href="#modal06">
+                    <picture>
+                        <img src="./images/pc_gallary_01-100.jpg" alt="画像１">
+                    </picture>
+                </a>
             </div>
         </section>
+
+        <div class="remodal" data-remodal-id="modal01">
+            <img src="./images/pc_gallary_01-100.jpg" alt="画像１">
+            <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal02">
+            <img src="./images/pc_gallary_02-100.jpg" alt="画像2">
+            <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal03">
+            <img src="./images/pc_gallary_03-100.jpg" alt="画像3">
+            <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal04">
+            <img src="./images/pc_gallary_04-100.jpg" alt="画像4">
+            <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal05">
+            <img src="./images/pc_gallary_05-100.jpg" alt="画像5">
+            <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+        </div>
+        <div class="remodal" data-remodal-id="modal06">
+            <img src="./images/pc_gallary_01-100.jpg" alt="画像1">
+            <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+        </div>
 
         <section class="event wrapper">
             <h2 id="event">EVENT</h2>
@@ -270,28 +286,9 @@
                 ]
             });
         });
-
-        (function() {
-    var thumbs = document.querySelectorAll('.clickable-img');
-    var modal = document.querySelector('.img-modal');
-    var photo = document.querySelector('.modal-photo');
-
-    if (!modal || !photo) return;
-
-    document.body.appendChild(modal);
-
-    thumbs.forEach(function(thumb) {
-        thumb.addEventListener('click', function() {
-            photo.src = thumb.src;
-            modal.className = 'img-modal open';
-        });
-    });
-
-    modal.addEventListener('click', function() {
-    modal.className = 'img-modal';
-    photo.src = '';
-    });
-})();
     </script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+
 </body>
 </html>
