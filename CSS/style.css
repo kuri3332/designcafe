@@ -400,9 +400,7 @@ footer {
     .image-container {
         overflow-x: auto;
     }
-    /* .image-container picture { 
-        flex: 0 0 390px
-    }*/
+    
     .image-container picture img {
         width: 100%;
     }
